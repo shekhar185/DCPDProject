@@ -21,8 +21,6 @@ def mapper(textp):
         a = vowelRegx.findall(word)
         if a != []:
             ToReduce[i] = (word,a)
-    outp = list(ToReduce.values())
-    pprint.pprint(outp)
     return ToReduce.values()
 
 def Reducer(ToReduce):
